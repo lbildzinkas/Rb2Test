@@ -11,7 +11,14 @@
     ],
     "frameworks": {
       "netcoreapp2.0": {
-        "projectReferences": {}
+        "projectReferences": {
+          "/Users/lbarletta/RiderProjects/Rb2Test/Rb2Test.Domain/Rb2Test.Domain.csproj": {
+            "projectPath": "/Users/lbarletta/RiderProjects/Rb2Test/Rb2Test.Domain/Rb2Test.Domain.csproj"
+          },
+          "/Users/lbarletta/RiderProjects/Rb2Test/Rb2Test.Service/Rb2Test.Service.csproj": {
+            "projectPath": "/Users/lbarletta/RiderProjects/Rb2Test/Rb2Test.Service/Rb2Test.Service.csproj"
+          }
+        }
       }
     }
   },
@@ -21,6 +28,14 @@
         "Microsoft.NETCore.App": {
           "target": "Package",
           "version": "2.0.0"
+        },
+        "AutoMapper": {
+          "target": "Package",
+          "version": "6.2.2"
+        },
+        "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+          "target": "Package",
+          "version": "3.2.0"
         },
         "Microsoft.AspNetCore.All": {
           "target": "Package",

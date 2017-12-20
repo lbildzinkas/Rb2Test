@@ -9,3 +9,7 @@
 /Users/lbarletta/RiderProjects/Rb2Test/Rb2Test.Api/obj/Debug/netcoreapp2.0/Rb2Test.Api.AssemblyInfo.cs
 /Users/lbarletta/RiderProjects/Rb2Test/Rb2Test.Api/obj/Debug/netcoreapp2.0/Rb2Test.Api.dll
 /Users/lbarletta/RiderProjects/Rb2Test/Rb2Test.Api/obj/Debug/netcoreapp2.0/Rb2Test.Api.pdb
+/Users/lbarletta/RiderProjects/Rb2Test/Rb2Test.Api/bin/Debug/netcoreapp2.0/Rb2Test.Domain.dll
+/Users/lbarletta/RiderProjects/Rb2Test/Rb2Test.Api/bin/Debug/netcoreapp2.0/Rb2Test.Service.dll
+/Users/lbarletta/RiderProjects/Rb2Test/Rb2Test.Api/bin/Debug/netcoreapp2.0/Rb2Test.Service.pdb
+/Users/lbarletta/RiderProjects/Rb2Test/Rb2Test.Api/bin/Debug/netcoreapp2.0/Rb2Test.Domain.pdb

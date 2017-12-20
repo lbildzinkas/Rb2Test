@@ -1,7 +1,10 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Rb2Test.Domain.Service;
+using Rb2Test.Service;
 
 namespace Rb2Test.Api
 {
@@ -18,6 +21,9 @@ namespace Rb2Test.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddTransient<ITrackService, TrackService>();
+            services.AddTransient<ITrackCalculatorService, TrackCalculatorService>();
+            services.AddAutoMapper();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

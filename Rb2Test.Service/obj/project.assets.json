@@ -196,6 +196,16 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "Rb2Test.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Rb2Test.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Rb2Test.Domain.dll": {}
+        }
       }
     }
   },
@@ -656,11 +666,17 @@
         "netstandard.library.2.0.0.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "Rb2Test.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Rb2Test.Domain/Rb2Test.Domain.csproj",
+      "msbuildProject": "../Rb2Test.Domain/Rb2Test.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
-      "Microsoft.NETCore.App >= 2.0.0"
+      "Microsoft.NETCore.App >= 2.0.0",
+      "Rb2Test.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -686,7 +702,11 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/lbarletta/RiderProjects/Rb2Test/Rb2Test.Domain/Rb2Test.Domain.csproj": {
+              "projectPath": "/Users/lbarletta/RiderProjects/Rb2Test/Rb2Test.Domain/Rb2Test.Domain.csproj"
+            }
+          }
         }
       }
     },
