@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{D15212D7-7B69-4D0A-A0F1-6934604E120D}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Rb2Test.Service/Class1.cs">
+    <Files>
+      <File FileName="Rb2Test.Domain/Class1.cs" Line="1" Column="1" />
+      <File FileName="Rb2Test.Tests/UnitTest1.cs" Line="1" Column="1" />
+      <File FileName="Rb2Test.Service/Class1.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Rb2Test.Api PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+</Properties>

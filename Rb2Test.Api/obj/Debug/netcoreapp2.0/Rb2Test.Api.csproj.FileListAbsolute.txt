@@ -1,0 +1,11 @@
+/Users/lbarletta/RiderProjects/Rb2Test/Rb2Test.Api/bin/Debug/netcoreapp2.0/Rb2Test.Api.deps.json
+/Users/lbarletta/RiderProjects/Rb2Test/Rb2Test.Api/bin/Debug/netcoreapp2.0/Rb2Test.Api.runtimeconfig.json
+/Users/lbarletta/RiderProjects/Rb2Test/Rb2Test.Api/bin/Debug/netcoreapp2.0/Rb2Test.Api.runtimeconfig.dev.json
+/Users/lbarletta/RiderProjects/Rb2Test/Rb2Test.Api/bin/Debug/netcoreapp2.0/Rb2Test.Api.dll
+/Users/lbarletta/RiderProjects/Rb2Test/Rb2Test.Api/bin/Debug/netcoreapp2.0/Rb2Test.Api.pdb
+/Users/lbarletta/RiderProjects/Rb2Test/Rb2Test.Api/obj/Debug/netcoreapp2.0/Rb2Test.Api.csprojResolveAssemblyReference.cache
+/Users/lbarletta/RiderProjects/Rb2Test/Rb2Test.Api/obj/Debug/netcoreapp2.0/Rb2Test.Api.csproj.CoreCompileInputs.cache
+/Users/lbarletta/RiderProjects/Rb2Test/Rb2Test.Api/obj/Debug/netcoreapp2.0/Rb2Test.Api.AssemblyInfoInputs.cache
+/Users/lbarletta/RiderProjects/Rb2Test/Rb2Test.Api/obj/Debug/netcoreapp2.0/Rb2Test.Api.AssemblyInfo.cs
+/Users/lbarletta/RiderProjects/Rb2Test/Rb2Test.Api/obj/Debug/netcoreapp2.0/Rb2Test.Api.dll
+/Users/lbarletta/RiderProjects/Rb2Test/Rb2Test.Api/obj/Debug/netcoreapp2.0/Rb2Test.Api.pdb

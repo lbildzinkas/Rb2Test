@@ -1,0 +1,34 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "/Users/lbarletta/RiderProjects/Rb2Test/Rb2Test.Domain/Rb2Test.Domain.csproj",
+    "projectName": "Rb2Test.Domain",
+    "projectPath": "/Users/lbarletta/RiderProjects/Rb2Test/Rb2Test.Domain/Rb2Test.Domain.csproj",
+    "outputPath": "/Users/lbarletta/RiderProjects/Rb2Test/Rb2Test.Domain/obj/",
+    "projectStyle": "PackageReference",
+    "originalTargetFrameworks": [
+      "netcoreapp2.0"
+    ],
+    "frameworks": {
+      "netcoreapp2.0": {
+        "projectReferences": {}
+      }
+    }
+  },
+  "frameworks": {
+    "netcoreapp2.0": {
+      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "2.0.0"
+        }
+      },
+      "imports": [
+        "net461"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  }
+}
