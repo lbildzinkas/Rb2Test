@@ -11,17 +11,18 @@ namespace Rb2Test.Domain.Service
         {
             DateTime startTime = DateTime.MinValue; 
             var trackes = new List<Track>();
+            uint trackId = 1;
             var track = new Track
             {
+                Id = trackId,
                 TrackedTalks = new List<TrackedTalk>()
             };
-            var trackId = 1;
+            
             var i = 0;
             
             //todo: refactor the algorithm to find the best combination for perfect schedule
             while (i < talks.Count)
             {
-                
                 var talk = talks[i];
                 var trackedTalk = new TrackedTalk();
                 
@@ -41,8 +42,10 @@ namespace Rb2Test.Domain.Service
                     
                     track.TrackedTalks.Add(trackedTalk);
                     trackes.Add(track);
+                    trackId++;
                     track = new Track
                     {
+                        Id = trackId,
                         TrackedTalks = new List<TrackedTalk>()
                     };
                     startTime = new DateTime(1, 1, 1, 9, 0, 0);
