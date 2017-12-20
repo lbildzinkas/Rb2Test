@@ -1,4 +1,7 @@
 ﻿using AutoMapper;
+using Rb2Test.Api.Controllers;
+using Rb2Test.Api.ViewModels;
+using Rb2Test.Domain.Model;
 
 namespace Rb2Test.Api.MappingProfiles
 {
@@ -6,11 +9,13 @@ namespace Rb2Test.Api.MappingProfiles
     {
         public TrackMapProfile()
         {
-//            CreateMap<Talk, OrderViewModel>()
-//                .ForMember(o => o.OrderId, ex => ex.MapFrom(opt => opt.Id))
-//                .ReverseMap();
-//            CreateMap<OrderItem, OrderItemViewModel>()
-//                .ReverseMap();
+            CreateMap<Talk, TalkViewModel>()
+                .ReverseMap();
+
+            CreateMap<Track, TrackViewModel>();
+            
+            CreateMap<TrackedTalk, TrackedTalkViewModel>()
+                .ForMember(t => t.Time, ex => ex.MapFrom(opt => opt.Time.ToShortTimeString()));
         }
     }
 }

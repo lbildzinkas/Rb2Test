@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -24,14 +25,16 @@ namespace Rb2Test.Api.Controllers
         }
 
         [HttpPost]
-        public IActionResult Index([FromBody] IList<TalkViewModel> talks)
+        public IActionResult Post([FromBody] IList<TalkViewModel> talks)
         {
             try
             {
+                if (!ModelState.IsValid)
+                    return BadRequest(ModelState.Values.SelectMany(v => v.Errors));
                 var domainTalks = _mapper.Map<IList<TalkViewModel>, IList<Talk>>(talks);
                 var trackes = _trackService.FormatTalksIntoTracks(domainTalks);
                 
-                return Ok();
+                return Ok(_mapper.Map<IList<Track>, IList<TrackViewModel>>(trackes));
             }
             catch (Exception e)
             {

@@ -34,9 +34,8 @@ namespace Rb2Test.Tests.Domain.Service
                 new Talk() {Title = "Writing Fast Tests Against Enterprise Rails", Length = 30},
                 new Talk() {Title = "Writing Fast Tests Against Enterprise Rails", Length = 30},
             };
-            var configServiceMock = new Mock<IConfigurationService>();
 
-            var sut = new TrackCalculatorService(configServiceMock.Object);
+            var sut = new TrackCalculatorService();
 
             var trackes = sut.CalculateTracks(talks);
             
