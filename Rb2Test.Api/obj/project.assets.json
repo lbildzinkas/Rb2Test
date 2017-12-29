@@ -12633,57 +12633,72 @@
     ]
   },
   "packageFolders": {
-    "/Users/lbarletta/.nuget/packages/": {}
+    "C:\\Users\\lbarl\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
-      "projectUniqueName": "/Users/lbarletta/RiderProjects/Rb2Test/Rb2Test.Api/Rb2Test.Api.csproj",
+      "projectUniqueName": "C:\\Users\\lbarl\\Source\\Repos\\Rb2Test\\Rb2Test.Api\\Rb2Test.Api.csproj",
       "projectName": "Rb2Test.Api",
-      "projectPath": "/Users/lbarletta/RiderProjects/Rb2Test/Rb2Test.Api/Rb2Test.Api.csproj",
-      "packagesPath": "/Users/lbarletta/.nuget/packages/",
-      "outputPath": "/Users/lbarletta/RiderProjects/Rb2Test/Rb2Test.Api/obj/",
+      "projectPath": "C:\\Users\\lbarl\\Source\\Repos\\Rb2Test\\Rb2Test.Api\\Rb2Test.Api.csproj",
+      "packagesPath": "C:\\Users\\lbarl\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\lbarl\\Source\\Repos\\Rb2Test\\Rb2Test.Api\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "/Users/lbarletta/.config/NuGet/NuGet.Config"
+        "C:\\Users\\lbarl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "/Users/lbarletta/RiderProjects/Rb2Test/Rb2Test.Domain/Rb2Test.Domain.csproj": {
-              "projectPath": "/Users/lbarletta/RiderProjects/Rb2Test/Rb2Test.Domain/Rb2Test.Domain.csproj"
+            "C:\\Users\\lbarl\\Source\\Repos\\Rb2Test\\Rb2Test.Domain\\Rb2Test.Domain.csproj": {
+              "projectPath": "C:\\Users\\lbarl\\Source\\Repos\\Rb2Test\\Rb2Test.Domain\\Rb2Test.Domain.csproj"
             },
-            "/Users/lbarletta/RiderProjects/Rb2Test/Rb2Test.Service/Rb2Test.Service.csproj": {
-              "projectPath": "/Users/lbarletta/RiderProjects/Rb2Test/Rb2Test.Service/Rb2Test.Service.csproj"
+            "C:\\Users\\lbarl\\Source\\Repos\\Rb2Test\\Rb2Test.Service\\Rb2Test.Service.csproj": {
+              "projectPath": "C:\\Users\\lbarl\\Source\\Repos\\Rb2Test\\Rb2Test.Service\\Rb2Test.Service.csproj"
             }
           }
         }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
       }
     },
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "Microsoft.NETCore.App": {
-            "target": "Package",
-            "version": "2.0.0"
-          },
           "AutoMapper": {
             "target": "Package",
-            "version": "6.2.2"
+            "version": "[6.2.2, )"
           },
           "AutoMapper.Extensions.Microsoft.DependencyInjection": {
             "target": "Package",
-            "version": "3.2.0"
+            "version": "[3.2.0, )"
           },
           "Microsoft.AspNetCore.All": {
             "target": "Package",
-            "version": "2.0.0"
+            "version": "[2.0.0, )"
+          },
+          "Microsoft.NETCore.App": {
+            "target": "Package",
+            "version": "[2.0.0, )",
+            "autoReferenced": true
           }
         },
         "imports": [

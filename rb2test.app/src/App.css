@@ -1,0 +1,98 @@
+html, body, .root {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+}
+body, .app {
+  background: white;
+}
+
+/* main page */
+
+.list-title {
+  padding: 10px 0;
+  background: #2e7c31;
+  text-align: center;
+}
+.list-title h1 {
+  font-weight: 400;
+  margin: 0;
+  color: white;
+}
+
+.list-content {
+  padding: 0 0 80px;
+  flex: 1;
+}
+
+.management {
+  padding: 0 10px 20px;
+}
+
+@media (min-width: 600px) {
+  .bookshelf {
+    padding: 0 20px 40px;
+  }
+}
+
+.management-title {
+  border-bottom: 1px solid #dedede;
+}
+.management-section {
+  text-align: center;
+}
+
+.track {
+  width: auto;
+}
+
+.track * {
+  display: inline-block;
+  margin: 3px;
+  padding: 3px;
+}
+
+.track-title-label,
+.track-length-label {
+  font-size: 0.8em;
+}
+
+.track-add {
+  width: 30px;
+  height: 30px;
+  background: #2e7d32;
+  background-image: url('./icons/add.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 28px;
+  font-size: 0;
+  margin: 5px 5px 0px 5px;
+  padding: 5px 5px 0px 5px;
+}
+
+.track-table * {
+  display: inline-block;
+  margin: 3px;
+  padding: 3px;
+}
+
+.track-table-header-name{
+  width: 200px;
+  font-weight: bold;
+}
+.track-table-header-length{
+  width: 50px;
+  font-weight: bold;
+}
+
+.track-table-row-name{
+  width: 200px;
+}
+.track-table-row-length{
+  width: 50px;
+}
+
+.calculate{
+  margin: 20px;
+}

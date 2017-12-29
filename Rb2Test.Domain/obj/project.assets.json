@@ -664,30 +664,44 @@
     ]
   },
   "packageFolders": {
-    "/Users/lbarletta/.nuget/packages/": {}
+    "C:\\Users\\lbarl\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
-      "projectUniqueName": "/Users/lbarletta/RiderProjects/Rb2Test/Rb2Test.Domain/Rb2Test.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\lbarl\\Source\\Repos\\Rb2Test\\Rb2Test.Domain\\Rb2Test.Domain.csproj",
       "projectName": "Rb2Test.Domain",
-      "projectPath": "/Users/lbarletta/RiderProjects/Rb2Test/Rb2Test.Domain/Rb2Test.Domain.csproj",
-      "packagesPath": "/Users/lbarletta/.nuget/packages/",
-      "outputPath": "/Users/lbarletta/RiderProjects/Rb2Test/Rb2Test.Domain/obj/",
+      "projectPath": "C:\\Users\\lbarl\\Source\\Repos\\Rb2Test\\Rb2Test.Domain\\Rb2Test.Domain.csproj",
+      "packagesPath": "C:\\Users\\lbarl\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\lbarl\\Source\\Repos\\Rb2Test\\Rb2Test.Domain\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "/Users/lbarletta/.config/NuGet/NuGet.Config"
+        "C:\\Users\\lbarl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {}
         }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
       }
     },
     "frameworks": {
@@ -696,7 +710,8 @@
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "2.0.0"
+            "version": "[2.0.0, )",
+            "autoReferenced": true
           }
         },
         "imports": [

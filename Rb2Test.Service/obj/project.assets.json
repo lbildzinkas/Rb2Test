@@ -680,34 +680,48 @@
     ]
   },
   "packageFolders": {
-    "/Users/lbarletta/.nuget/packages/": {}
+    "C:\\Users\\lbarl\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
-      "projectUniqueName": "/Users/lbarletta/RiderProjects/Rb2Test/Rb2Test.Service/Rb2Test.Service.csproj",
+      "projectUniqueName": "C:\\Users\\lbarl\\Source\\Repos\\Rb2Test\\Rb2Test.Service\\Rb2Test.Service.csproj",
       "projectName": "Rb2Test.Service",
-      "projectPath": "/Users/lbarletta/RiderProjects/Rb2Test/Rb2Test.Service/Rb2Test.Service.csproj",
-      "packagesPath": "/Users/lbarletta/.nuget/packages/",
-      "outputPath": "/Users/lbarletta/RiderProjects/Rb2Test/Rb2Test.Service/obj/",
+      "projectPath": "C:\\Users\\lbarl\\Source\\Repos\\Rb2Test\\Rb2Test.Service\\Rb2Test.Service.csproj",
+      "packagesPath": "C:\\Users\\lbarl\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\lbarl\\Source\\Repos\\Rb2Test\\Rb2Test.Service\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "/Users/lbarletta/.config/NuGet/NuGet.Config"
+        "C:\\Users\\lbarl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "/Users/lbarletta/RiderProjects/Rb2Test/Rb2Test.Domain/Rb2Test.Domain.csproj": {
-              "projectPath": "/Users/lbarletta/RiderProjects/Rb2Test/Rb2Test.Domain/Rb2Test.Domain.csproj"
+            "C:\\Users\\lbarl\\Source\\Repos\\Rb2Test\\Rb2Test.Domain\\Rb2Test.Domain.csproj": {
+              "projectPath": "C:\\Users\\lbarl\\Source\\Repos\\Rb2Test\\Rb2Test.Domain\\Rb2Test.Domain.csproj"
             }
           }
         }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
       }
     },
     "frameworks": {
@@ -716,7 +730,8 @@
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "2.0.0"
+            "version": "[2.0.0, )",
+            "autoReferenced": true
           }
         },
         "imports": [
