@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using AutoMapper;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Rb2Test.Api.ViewModels;
@@ -25,6 +26,7 @@ namespace Rb2Test.Api.Controllers
         }
 
         [HttpPost]
+        [DisableCors]
         public IActionResult Post([FromBody] IList<TalkViewModel> talks)
         {
             try

@@ -1,23 +1,22 @@
-import React, { Component } from 'react';
+import React from 'react'
+import ProcessedTalk from './ProcessedTalk';
 
 const TrackTable = (props) => {
-        const tracksToShow = props.tracks.map(track => (
-            <div key={track.trackTitle} className="track-table">
-                <label className="track-table-row-name">{track.trackTitle}</label>
-                <label className="track-table-row-length">{track.trackLength}</label>
-            </div>
-        ))
-        
+    const tracksRows = props.tracks.map(track => {
+        const talks = track.trackedTalks.map(talk => (<ProcessedTalk key={talk.time} talk={talk}/>))
         return (
+        <div className="track-row">
+            <label className="talk-table-row-name">Track {track.id}:</label>
             <div>
-               {(props.tracks.length > 0 && <div className="track-table">
-                    <label className="track-table-header-name">Track Name</label>
-                    <label className="track-table-header-length">Length</label>
-                </div>)
-               }
-                {tracksToShow}
+                {talks}
             </div>
-        )
+        </div>
+    )})
+
+    return (
+        <div>
+            {tracksRows}
+        </div>)
 }
 
 export default TrackTable;

@@ -50,7 +50,7 @@ namespace Rb2Test.Domain.Service
                     };
                     startTime = new DateTime(1, 1, 1, 9, 0, 0);
                 }
-                else if (nextEventTime.Hour > 12 && nextEventTime.Hour <= 13)
+                else if (nextEventTime.Hour > 12 && nextEventTime.Hour < 13)
                 {
                     //todo: refactor this to a fluent interface using builder pattern
                     trackedTalk.Time = new DateTime(1, 1, 1, 12, 0, 0);

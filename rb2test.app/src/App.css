@@ -43,22 +43,22 @@ body, .app {
   text-align: center;
 }
 
-.track {
+.talk {
   width: auto;
 }
 
-.track * {
+.talk * {
   display: inline-block;
   margin: 3px;
   padding: 3px;
 }
 
-.track-title-label,
-.track-length-label {
+.talk-title-label,
+.talk-length-label {
   font-size: 0.8em;
 }
 
-.track-add {
+.talk-add {
   width: 30px;
   height: 30px;
   background: #2e7d32;
@@ -71,25 +71,25 @@ body, .app {
   padding: 5px 5px 0px 5px;
 }
 
-.track-table * {
+.talk-table * {
   display: inline-block;
   margin: 3px;
   padding: 3px;
 }
 
-.track-table-header-name{
+.talk-table-header-name{
   width: 200px;
   font-weight: bold;
 }
-.track-table-header-length{
+.talk-table-header-length{
   width: 50px;
   font-weight: bold;
 }
 
-.track-table-row-name{
+.talk-table-row-name{
   width: 200px;
 }
-.track-table-row-length{
+.talk-table-row-length{
   width: 50px;
 }
 

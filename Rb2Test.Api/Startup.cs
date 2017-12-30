@@ -24,6 +24,18 @@ namespace Rb2Test.Api
             services.AddTransient<ITrackService, TrackService>();
             services.AddTransient<ITrackCalculatorService, TrackCalculatorService>();
             services.AddAutoMapper();
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAllHeaders",
+                    builder =>
+                    {
+                        builder.WithOrigins("http://localhost:3000/")
+                            .AllowAnyHeader()
+                            .AllowAnyMethod();
+                    });
+            });
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -35,6 +47,7 @@ namespace Rb2Test.Api
             }
 
             app.UseMvc();
+            app.UseCors("AllowAllHeaders");
         }
     }
 }
