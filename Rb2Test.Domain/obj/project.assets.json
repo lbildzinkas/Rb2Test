@@ -673,11 +673,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\lbarl\\Source\\Repos\\Rb2Test\\Rb2Test.Domain\\Rb2Test.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\lbarl\\source\\repos\\Rb2Test\\Rb2Test.Domain\\Rb2Test.Domain.csproj",
       "projectName": "Rb2Test.Domain",
-      "projectPath": "C:\\Users\\lbarl\\Source\\Repos\\Rb2Test\\Rb2Test.Domain\\Rb2Test.Domain.csproj",
+      "projectPath": "C:\\Users\\lbarl\\source\\repos\\Rb2Test\\Rb2Test.Domain\\Rb2Test.Domain.csproj",
       "packagesPath": "C:\\Users\\lbarl\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lbarl\\Source\\Repos\\Rb2Test\\Rb2Test.Domain\\obj\\",
+      "outputPath": "C:\\Users\\lbarl\\source\\repos\\Rb2Test\\Rb2Test.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

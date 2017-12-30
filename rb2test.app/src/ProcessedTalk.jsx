@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 const ProcessedTalk = ({ talk }) => (
-    <div>
+    <div className="processed-talk">
         <label>
             - {talk.time} {talk.title} 
         </label>

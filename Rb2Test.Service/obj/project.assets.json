@@ -689,11 +689,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\lbarl\\Source\\Repos\\Rb2Test\\Rb2Test.Service\\Rb2Test.Service.csproj",
+      "projectUniqueName": "C:\\Users\\lbarl\\source\\repos\\Rb2Test\\Rb2Test.Service\\Rb2Test.Service.csproj",
       "projectName": "Rb2Test.Service",
-      "projectPath": "C:\\Users\\lbarl\\Source\\Repos\\Rb2Test\\Rb2Test.Service\\Rb2Test.Service.csproj",
+      "projectPath": "C:\\Users\\lbarl\\source\\repos\\Rb2Test\\Rb2Test.Service\\Rb2Test.Service.csproj",
       "packagesPath": "C:\\Users\\lbarl\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lbarl\\Source\\Repos\\Rb2Test\\Rb2Test.Service\\obj\\",
+      "outputPath": "C:\\Users\\lbarl\\source\\repos\\Rb2Test\\Rb2Test.Service\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -712,8 +712,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Users\\lbarl\\Source\\Repos\\Rb2Test\\Rb2Test.Domain\\Rb2Test.Domain.csproj": {
-              "projectPath": "C:\\Users\\lbarl\\Source\\Repos\\Rb2Test\\Rb2Test.Domain\\Rb2Test.Domain.csproj"
+            "C:\\Users\\lbarl\\source\\repos\\Rb2Test\\Rb2Test.Domain\\Rb2Test.Domain.csproj": {
+              "projectPath": "C:\\Users\\lbarl\\source\\repos\\Rb2Test\\Rb2Test.Domain\\Rb2Test.Domain.csproj"
             }
           }
         }

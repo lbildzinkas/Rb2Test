@@ -20,7 +20,6 @@ namespace Rb2Test.Domain.Service
             
             var i = 0;
             
-            //todo: refactor the algorithm to find the best combination for perfect schedule
             while (i < talks.Count)
             {
                 var talk = talks[i];
@@ -35,7 +34,6 @@ namespace Rb2Test.Domain.Service
                     
                 if (nextEventTime.Hour > 16 && nextEventTime.Hour <= 17)
                 {
-                    //todo: refactor this to a fluent interface using builder pattern
                     trackedTalk.Time = startTime.Hour < 16 ? new DateTime(1, 1, 1, 16, 0, 0) : startTime;
                     trackedTalk.Title = "Networking Event";
                     trackedTalk.Length = 60;
@@ -50,9 +48,16 @@ namespace Rb2Test.Domain.Service
                     };
                     startTime = new DateTime(1, 1, 1, 9, 0, 0);
                 }
-                else if (nextEventTime.Hour > 12 && nextEventTime.Hour < 13)
+                else if (nextEventTime.Hour >= 12 && nextEventTime.Hour < 13)
                 {
-                    //todo: refactor this to a fluent interface using builder pattern
+                    trackedTalk.Time = startTime;
+                    trackedTalk.Title = talk.Title;
+                    trackedTalk.Length = talk.Length;
+
+                    track.TrackedTalks.Add(trackedTalk);
+                    i++;
+
+                    trackedTalk = new TrackedTalk();
                     trackedTalk.Time = new DateTime(1, 1, 1, 12, 0, 0);
                     trackedTalk.Length = 60;
                     trackedTalk.Title = "Lunch";
