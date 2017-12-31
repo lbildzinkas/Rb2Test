@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Cors.Internal;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Rb2Test.Domain.Service;
@@ -22,19 +24,22 @@ namespace Rb2Test.Api
         {
             services.AddMvc();
             services.AddTransient<ITrackService, TrackService>();
-            services.AddTransient<ITrackCalculatorService, TrackCalculatorService>();
+            services.AddTransient<ITrackCalculatorService, ImprovedTrackCalculatorService>();
             services.AddAutoMapper();
             services.AddCors(options =>
             {
                 options.AddPolicy("AllowAllHeaders",
                     builder =>
                     {
-                        builder.WithOrigins("http://localhost:3000/")
+                        builder.WithOrigins("http://localhost:3000")
                             .AllowAnyHeader()
                             .AllowAnyMethod();
                     });
             });
-
+            services.Configure<MvcOptions>(options =>
+            {
+                options.Filters.Add(new CorsAuthorizationFilterFactory("AllowAllHeaders"));
+            });
 
         }
 

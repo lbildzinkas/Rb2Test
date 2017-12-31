@@ -6,7 +6,7 @@ const ProcessedTalk = ({ talk }) => (
             - {talk.time} {talk.title} 
         </label>
         <label>
-            {talk.length}
+            {!talk.title.includes("lightning") ? talk.length : ""}
         </label>
     </div>
 )

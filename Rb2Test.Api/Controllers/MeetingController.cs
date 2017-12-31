@@ -26,7 +26,7 @@ namespace Rb2Test.Api.Controllers
         }
 
         [HttpPost]
-        [DisableCors]
+        [EnableCors("AllowAllHeaders")]
         public IActionResult Post([FromBody] IList<TalkViewModel> talks)
         {
             try

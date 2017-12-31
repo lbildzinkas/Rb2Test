@@ -14,8 +14,7 @@ namespace Rb2Test.Domain.Service
             uint trackId = 1;
             var track = new Track
             {
-                Id = trackId,
-                TrackedTalks = new List<TrackedTalk>()
+                Id = trackId
             };
             
             var i = 0;
@@ -43,8 +42,7 @@ namespace Rb2Test.Domain.Service
                     trackId++;
                     track = new Track
                     {
-                        Id = trackId,
-                        TrackedTalks = new List<TrackedTalk>()
+                        Id = trackId
                     };
                     startTime = new DateTime(1, 1, 1, 9, 0, 0);
                 }
